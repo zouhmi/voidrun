@@ -3,7 +3,6 @@ build/
 run/
 .jdk/
 *.log
-!spec/*.log
 .env
 .env.*
 *.token
@@ -12,3 +11,5 @@ run/
 # vendored build dependencies stay local (Mojang client jar and library set)
 **/libs/api/*.jar
 **/libs/mc/*.jar
+# local copies of the jars that were published
+dist/
