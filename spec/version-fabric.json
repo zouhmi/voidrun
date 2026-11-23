@@ -1,0 +1,18 @@
+{
+  "name": "Voidrun 1.0.0 (Fabric 1.21.11)",
+  "version_number": "1.0.0-fabric",
+  "changelog": "Fixed F7 doing nothing in the main menu and in game. The key was only read by polling, which launchers that replace the input backend do not answer. F7 is now read from the keybinding click queue and from screen key events, so it starts a run from the title screen, from the pause menu and in the world.",
+  "dependencies": [
+    {
+      "project_id": "P7dR8mSH",
+      "dependency_type": "required"
+    }
+  ],
+  "game_versions": ["1.21.11"],
+  "version_type": "release",
+  "loaders": ["fabric"],
+  "featured": true,
+  "project_id": "RMZwSlQ8",
+  "file_parts": ["file"],
+  "primary_file": "file"
+}

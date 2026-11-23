@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "voidrun",
+  "version": "${version}",
+  "name": "Voidrun",
+  "description": "A fixed frame time benchmark. F7 starts a run, F8 opens the settings.",
+  "authors": [
+    "Voidrun"
+  ],
+  "license": "MIT",
+  "icon": "assets/voidrun/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.voidrun.VoidrunMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "fabric-api": "*",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  }
+}

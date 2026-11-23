@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+version = '1.1.0'
+group = 'com.voidrun'
+
+base {
+    archivesName = 'voidrun'
+}
+
+repositories {
+    maven { url = 'https://maven.fabricmc.net/' }
+    mavenCentral()
+}
+
+dependencies {
+    // Minecraft 26.3 ships deobfuscated, so there are no mappings to apply. Compiling against
+    // the client jar and the Fabric API modules directly is enough for a client-only mod.
+    compileOnly files('libs/mc/client.jar')
+    compileOnly 'net.fabricmc:fabric-loader:0.20.1'
+    compileOnly fileTree(dir: 'libs/api', include: '*.jar')
+    // 26.x no longer bundles these inside the client jar and they are not published by Fabric.
+    compileOnly fileTree(dir: 'libs/mc', include: '*.jar')
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 25
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand 'version': project.version
+    }
+}

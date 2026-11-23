@@ -1,0 +1,14 @@
+{
+  "slug": "voidrun",
+  "title": "Voidrun",
+  "description": "A fixed 300 second benchmark that measures frame time, FPS, CPU and RAM, with results you can compare between runs.",
+  "categories": ["utility", "optimization"],
+  "client_side": "required",
+  "server_side": "unsupported",
+  "license_id": "MIT",
+  "project_type": "mod",
+  "is_draft": true,
+  "initial_versions": [],
+  "additional_categories": [],
+  "body": "<span style=\"color:#22D3EE\">**Voidrun**</span> runs a fixed frame time benchmark and shows what your frames actually look like, instead of a single number.\n\nPress F7 on the main menu or in game. From the main menu it creates an empty superflat world called Voidrun Benchmark and joins it for you. The player is locked in place, your inventory is left alone, and nothing is placed in your world.\n\nYou wait through a short warmup, then the run lasts 300 seconds, five minutes of the same fixed test every time. Press ESC to cancel. Your position and abilities are restored when the run ends or you cancel it.\n\n---\n\n### <span style=\"color:#22D3EE\">Results</span>\n\nThe results screen shows average FPS, max FPS and the 1% and 0.1% lows, plus average frame time, P99 and P99.9 frame time, standard deviation, frame count, average CPU load and average RAM usage. A graph covers the whole run.\n\nFour buttons sit under the cards. Copy the summary to the clipboard, open the results folder, run again, or close.\n\nEach run is written to the `voidrun` folder in your game directory as a `.txt` and a `.json` file, so runs can be kept and compared later.\n\n---\n\n### <span style=\"color:#22D3EE\">Versions</span>\n\n<span style=\"color:#34D399\">Forge 1.8.9</span> and <span style=\"color:#34D399\">Fabric 1.21.11</span>. Client side only. The Fabric build needs Fabric API.\n\nIf something breaks, open an issue with the generated `.json` file attached.\n"
+}

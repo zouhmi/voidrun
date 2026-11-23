@@ -1,0 +1,14 @@
+build/
+.gradle/
+run/
+.jdk/
+*.log
+!spec/*.log
+.env
+.env.*
+*.token
+# Mojang client jars for the mappings-free 26.x builds
+**/libs/mc/client.jar
+# vendored build dependencies stay local (Mojang client jar and library set)
+**/libs/api/*.jar
+**/libs/mc/*.jar

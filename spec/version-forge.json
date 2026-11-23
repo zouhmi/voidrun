@@ -1,0 +1,19 @@
+{
+  "name": "Voidrun 1.1.0 (Forge 1.8.9)",
+  "version_number": "1.1.0-forge",
+  "changelog": "Settings screen on F8, saved to config/voidrun.json: benchmark name, duration, warm-up, spawn height, camera yaw and pitch, file name pattern, output folder, save format, auto save, auto copy, overlay corner and contents, results graph, animations and confirm before cancelling. Redesigned results screen and overlay. Forge 1.8.9 now creates an empty benchmark world and runs the full 5 minutes instead of stopping early. Losing window focus no longer cancels a run, the result is flagged instead. VSync and frame limits are called out on the results screen and in the saved files.",
+  "dependencies": [],
+  "game_versions": [
+    "1.8.9"
+  ],
+  "version_type": "release",
+  "loaders": [
+    "forge"
+  ],
+  "featured": true,
+  "project_id": "RMZwSlQ8",
+  "file_parts": [
+    "file"
+  ],
+  "primary_file": "file"
+}

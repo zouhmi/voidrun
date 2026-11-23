@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "voidrun",
+    "name": "Voidrun",
+    "description": "A fixed frame time benchmark. F7 starts a run, F8 opens the settings.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "authorList": ["Voidrun"],
+    "credits": "",
+    "logoFile": "logo.png",
+    "screenshots": [],
+    "parent": "",
+    "useDependencyInformation": false
+  }
+]

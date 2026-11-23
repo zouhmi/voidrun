@@ -1,0 +1,24 @@
+{
+  "name": "Voidrun 1.1.0 (Fabric 26.3)",
+  "version_number": "1.1.0-fabric-26.3",
+  "changelog": "Fabric build for Minecraft 26.3, with the same settings screen, results screen and overlay as the other builds. The 26.3 HUD and screen rendering use the new render-state API.",
+  "dependencies": [
+    {
+      "project_id": "P7dR8mSH",
+      "dependency_type": "required"
+    }
+  ],
+  "game_versions": [
+    "26.3"
+  ],
+  "version_type": "release",
+  "loaders": [
+    "fabric"
+  ],
+  "featured": true,
+  "project_id": "RMZwSlQ8",
+  "file_parts": [
+    "file"
+  ],
+  "primary_file": "file"
+}
